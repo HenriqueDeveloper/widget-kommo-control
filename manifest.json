@@ -1,0 +1,19 @@
+{
+  "name": "Alpha Control",
+  "version": "1.0.0",
+  "description": "Widget de controle visual para bloquear menus e aplicar CSS/JS personalizados.",
+  "baseUrl": "https://henriquedeveloper.github.io/widget-control-alpha",
+  "settings": {
+    "location": ["settings"],
+    "url": "index.html"
+  },
+  "permissions": {
+    "crm": true,
+    "chat": true,
+    "settings": true,
+    "account": true
+  },
+  "storage": {
+    "scopes": ["account"]
+  }
+}
