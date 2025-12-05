@@ -1,19 +1,52 @@
 {
-  "name": "Alpha Control",
-  "version": "1.0.0",
-  "description": "Widget de controle visual para bloquear menus e aplicar CSS/JS personalizados.",
-  "baseUrl": "https://henriquedeveloper.github.io/widget-control-alpha",
+  "widget": {
+    "name": "Alpha Control",
+    "description": "Widget para controle de menus e inserção de CSS/JS personalizados.",
+    "short_description": "Controle de menus + CSS/JS",
+    "version": "1.0.0",
+    "interface_version": 2,
+    "init_once": false,
+    "locale": [
+      "pt"
+    ],
+    "installation": true,
+    "support": {
+      "link": "https://henriquedeveloper.github.io/widget-control-alpha/",
+      "email": ""
+    }
+  },
+
+  "locations": [
+    "settings",
+    "everywhere"
+  ],
+
   "settings": {
-    "location": ["settings"],
-    "url": "index.html"
+    "fields": [
+      {
+        "key": "blockedMenus",
+        "name": "Menus Bloqueados",
+        "type": "multiselect",
+        "options": [
+          { "value": "start", "label": "Início" },
+          { "value": "whatsapp", "label": "WhatsApp" }
+        ]
+      },
+      {
+        "key": "customCSS",
+        "name": "CSS Personalizado",
+        "type": "textarea"
+      },
+      {
+        "key": "customJS",
+        "name": "JS Personalizado",
+        "type": "textarea"
+      }
+    ]
   },
-  "permissions": {
-    "crm": true,
-    "chat": true,
-    "settings": true,
-    "account": true
-  },
-  "storage": {
-    "scopes": ["account"]
-  }
+
+  "permissions": [
+    "settings",
+    "account_current"
+  ]
 }
