@@ -13,19 +13,16 @@
       "email": ""
     }
   },
-
   "locations": ["settings", "widget"],
-
   "js": [
     "https://henriquedeveloper.github.io/widget-control-alpha/script.js"
   ],
-
   "css": [
     "https://henriquedeveloper.github.io/widget-control-alpha/styles.css"
   ],
-
   "permissions": [
     "settings",
     "account_current"
   ]
 }
+
